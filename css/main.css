@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4A4B4C;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Site-Header */
+
+/* .site-header {} */
+
+.site-header-main {
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.site-header-main-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-header-logo {
+    background-color: #fff;
+    display: flex;
+    border-radius: 7px;
+    padding: 9px 6px;
+    margin-right: 35px;
+}
+
+.currencies {
+    display: flex;
+    margin-right: auto;
+    line-height: 19px;
+}
+
+.currencies-item {
+    color: #555555;
+    display: flex;
+}
+
+.currencies-item:first-child {
+    margin-right: 25px;
+}
+
+.currency-type {
+    color: rgba(41, 89, 206, 1);
+}
+
+.site-search-form {
+    margin-right: 25px;
+}
+
+.site-search-input {
+    padding: 15px 50px 13px 41px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+}
+
+.site-search-input::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: #8D8D8D;
+}
+
+.language-button {
+    margin-right: 25px;
+    display: flex;
+    padding:3px;
+    background-color: #DCE6FF;
+    border-radius: 39px;
+}
+
+.language-button-link {
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A6A6A6;
+    padding: 8px 7px;
+    border-radius: 50%;
+}
+
+.language-button-link:first-child {
+    margin-right: 8px;
+}
+
+.language-button-link-active {
+    color: #000000;
+    background-color: #FFFFFF;;
+}
+
+.login-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 13px 20px;
+    background: #7296EC;
+    border-radius: 10px;
+}
+
+/* Site-header-BOTTOM */
+
+.sitenav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D1D1D1;
+    margin-bottom: 40px;
+}
+
+.sitenav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right:34.44px ;
+}
+
+.sitenav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7F7F7F;
+    cursor: pointer;
+}
+
+.banner-link-image {
+    width: 1200px;
+    height: 128px;
+}
