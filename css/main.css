@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 body {
     font-family: 'Rubik', Arial, sans-serif;
@@ -15,6 +15,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: #4A4B4C;
+    background-color:white;
 }
 
 /* CONTAINER */
@@ -48,8 +49,12 @@ body {
     border-radius: 7px;
     padding: 9px 6px;
     margin-right: 35px;
+    text-decoration: none;
 }
 
+.site-header-logo-image{
+    object-fit: contain;
+}
 .currencies {
     display: flex;
     margin-right: auto;
@@ -66,6 +71,7 @@ body {
 }
 
 .currency-type {
+    margin-right: 5px;
     color: rgba(41, 89, 206, 1);
 }
 
@@ -75,9 +81,9 @@ body {
 
 .site-search-input {
     padding: 15px 50px 13px 41px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: none;
-    outline: none;
+    outline: transparent;
     border-radius: 60px;
 }
 
@@ -90,12 +96,13 @@ body {
 .language-button {
     margin-right: 25px;
     display: flex;
-    padding:3px;
+    padding: 3px;
     background-color: #DCE6FF;
     border-radius: 39px;
 }
 
 .language-button-link {
+    text-decoration: none;
     display: block;
     font-size: 13px;
     line-height: 15px;
@@ -110,10 +117,12 @@ body {
 
 .language-button-link-active {
     color: #000000;
-    background-color: #FFFFFF;;
+    background-color: #FFFFFF;
+    ;
 }
 
 .login-button {
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -140,10 +149,11 @@ body {
 }
 
 .sitenav-item:not(:last-child) {
-    margin-right:34.44px ;
+    margin-right: 34.44px;
 }
 
 .sitenav-link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -152,6 +162,6 @@ body {
 }
 
 .banner-link-image {
-    width: 1200px;
-    height: 128px;
+    /* width: 1200px;
+    height: 128px; */
 }
