@@ -38,13 +38,12 @@
           </span>
         </div>
         <!-- Search field -->
-        <form class="site-search-form" action="#">
+        <form class="site-search-form" action="#" method='GET' >
           <!-- <i></i> -->
-          <label></label>
-          <input class="site-search-input" type="text" placeholder="Поиск" name="search">
+          <input class="site-search-input" aria-label ='Поиск' type="search" id="search" placeholder="Поиск" name="search">
         </form>
 
-        <!-- Language-button -->
+        <!-- Languages-button -->
         <div class="language-button">
           <a class="language-button-link language-button-link-active" href="#" >УЗ</a>
           <a class="language-button-link" href="#" >РУ</a>
@@ -96,16 +95,122 @@
           </ul>
         </nav>
 
-        <!-- Banner-image -->
-        <aside class="commercial">
-          <a class="banner-link"  href="#"  target='_blank'>
-            <img class="banner-link-image" src="img/banner.jpg" alt="banner-image"  width="1200" height='128'>
+        <!--Site-header-banner-image -->
+        <aside class="site-header-banner">
+          <a class="site-header-banner-link"  href="#"  target='_blank'>
+            <img class="site-header-banner-image" src="img/banner.jpg" alt="banner-image"  width="1200" height='128' srcset="img/banner.jpg 1x,img/banner@2x.jpg 2x">
           </a>
         </aside>
 
       </div>
     </div>
   </header>
-</body>
 
+  <!-- MAIN content -->
+  <main  class="main-content">
+    <div class="container">
+      <section class="main-news">
+
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Кандидат на пост канцлера ФРГ Шольц назвал условия коалиционного соглашения</h3>
+            <p class="article-card-text">Лидер Социал-демократической партии Германии (СДПГ) и кандидат на должность...</p>
+            <img class="article-card-image" src="img/card1.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img1.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">ИА Красная Весна</span>
+                <time class="newspaper-time">15:55</time>
+              </div>
+            </div>
+          </a>
+        </article>
+        
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Ученые доказали экспериментальным путем пользу покровных культур</h3>
+            <p class="article-card-text">Новое исследование ученых университета Иллинойса объединяет полевые данные... </p>
+            <img class="article-card-image" src="img/card2.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img2.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">Газета.Ru </span>
+                <time class="newspaper-time">12:54</time>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Baidu запустила публичный сервис роботакси Apollo Go в Шанхае</h3>
+            <p class="article-card-text">Автопарк Baidu состоит из модифицированных электромобилей EV... </p>
+            <img class="article-card-image" src="img/card3.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img3.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">Хайтек+ </span>
+                <time class="newspaper-time">13:44</time>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</h3>
+            <p class="article-card-text">Во время презентации iPhone 13 Apple придала большое значения...</p>
+            <img class="article-card-image" src="img/card4.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img4.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">Digger.ru </span>
+                <time class="newspaper-time">14:25</time>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Nature: ученые смогли доказать природное происхождение коронавируса SARS-CoV-2</h3>
+            <p class="article-card-text">Во время презентации iPhone 13 Apple придала большое значение...</p>
+            <img class="article-card-image" src="img/card5.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img5.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">Lenta.ru </span>
+                <time class="newspaper-time">10:54</time>
+              </div>
+            </div>
+          </a>
+        </article>
+        
+        <article class="article-card">
+          <a class="article-card-link" href="#" >
+            <h3 class="article-card-title">Китайская марка JAC повысила цены на лифтбек и пикап в России</h3>
+            <p class="article-card-text">Две модели китайского бренда JAC из пяти, представленных на российском...</p>
+            <img class="article-card-image" src="img/card6.jpg" alt="news related image" width='360' height='165' >
+            <div class="card-bottom">
+              <img class="card-bottom-img" src="img/newspaper-img6.jpg" alt="newspaper" width="20" height="20">
+              <div class="newspaper-source newspaper">
+                <span class="newspaper-title">Тарантас Ньюс </span>
+                <time class="newspaper-time">10:44</time>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section class="notice-banner">
+        <p class="notice-banner-text">Хотите быть в курсе свежих новостей? <br>
+           Включите уведомления!
+        </p>
+        <button class="orange-button" type="button">Включит </button>
+      </section>
+    </div>
+  </main>
+
+
+</body>
 </html>

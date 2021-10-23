@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-/* a {
-    text-decoration: none;
-} */
-
 body {
     font-family: 'Rubik', Arial, sans-serif;
     margin: 0;
@@ -15,7 +11,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: #4A4B4C;
-    background-color:white;
+    background-color: white;
 }
 
 /* CONTAINER */
@@ -30,8 +26,6 @@ body {
 
 /* Site-Header */
 
-/* .site-header {} */
-
 .site-header-main {
     background-color: #F6F6F6;
     padding-top: 30px;
@@ -43,6 +37,7 @@ body {
     align-items: center;
 }
 
+/* Site-header-logo */
 .site-header-logo {
     background-color: #fff;
     display: flex;
@@ -52,9 +47,15 @@ body {
     text-decoration: none;
 }
 
-.site-header-logo-image{
+.site-header-logo:hover {
+    opacity: 0.8;
+}
+
+.site-header-logo-image {
     object-fit: contain;
 }
+
+/* Currency rates */
 .currencies {
     display: flex;
     margin-right: auto;
@@ -80,7 +81,8 @@ body {
 }
 
 .site-search-input {
-    padding: 15px 50px 13px 41px;
+    padding: 15px 13px;
+    padding-left: 40px;
     background-color: #FFFFFF;
     border: none;
     outline: transparent;
@@ -93,6 +95,7 @@ body {
     color: #8D8D8D;
 }
 
+/* Language toggle */
 .language-button {
     margin-right: 25px;
     display: flex;
@@ -118,7 +121,6 @@ body {
 .language-button-link-active {
     color: #000000;
     background-color: #FFFFFF;
-    ;
 }
 
 .login-button {
@@ -130,38 +132,167 @@ body {
     padding: 13px 20px;
     background: #7296EC;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    opacity: 0.8;
+}
+
+.login-button:active {
+    opacity: 0.6;
 }
 
 /* Site-header-BOTTOM */
 
 .sitenav {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 26px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #D1D1D1;
     margin-bottom: 40px;
 }
 
 .sitenav-list {
+    align-items: center;
     display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.sitenav-item {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .sitenav-item:not(:last-child) {
-    margin-right: 34.44px;
+    margin-right: 34px;
 }
 
 .sitenav-link {
+    display: block;
     text-decoration: none;
-    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #7F7F7F;
     cursor: pointer;
 }
 
-.banner-link-image {
-    /* width: 1200px;
-    height: 128px; */
+.sitenav-link:hover {
+    color: #7296ec;
+}
+
+.sitenav-link:active {
+    opacity: 0.6;
+}
+
+/* Site header banner */
+.site-header-banner-link {
+    display: flex;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+    padding-top: 50px;
+}
+
+.main-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-bottom: 60px;
+}
+
+.article-card {
+    width: 393px;
+    background: #F6F6F6;
+    border-radius: 15px;
+    padding: 20px 17px 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.article-card-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+.article-card-title {
+    height: 78px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.article-card-text {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #4A4B4C;
+}
+
+.article-card-image {
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.card-bottom-img {
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.newspaper {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5E5F61;
+}
+
+.newspaper-title {
+    margin-right: 5px;
+}
+
+/* Notice-banner */
+.notice-banner {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 60px;
+    padding: 25px 71px 25px 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: url(../img/notice-banner.png) no-repeat;
+}
+
+.notice-banner-text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.orange-button {
+    background-color: #F78B3B;
+    border-radius: 10px;
+    padding: 13px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
 }
