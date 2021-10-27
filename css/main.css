@@ -385,6 +385,7 @@ body {
 }
 
 .local-sidebar-news {
+    flex-grow:1;
     background-color: #F6F6F6;
     border-radius: 15px;
     padding: 20px 17px 25px;
