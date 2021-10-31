@@ -338,10 +338,12 @@ body {
 }
 
 .world-news-article-content {
-    flex-grow: 1;
+    flex-direction: column;
 }
 
 .world-news-article-title {
+    width: 535px;
+    flex-grow: 1;
     margin: 0;
     font-weight: 500;
     font-size: 20px;
@@ -350,6 +352,7 @@ body {
 }
 
 .world-news-article-link {
+    flex-grow: 1;
     color: #000000;
     text-decoration: none;
 }
@@ -436,6 +439,6 @@ body {
 
 .local-news-ad {
     width: 393px;
-    height: 338px;
+    height: 335px;
     border-radius: 15px;
 }
