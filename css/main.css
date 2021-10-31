@@ -195,8 +195,10 @@ body {
 
 
 /* MAIN CONTENT */
+
 .main-content {
     padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 .main-news {
@@ -303,6 +305,8 @@ body {
 
 
 .world-news-heading {
+    margin: 0;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -355,7 +359,6 @@ body {
     margin-bottom: 17px;
 }
 
-
 .show-more-button {
     display: inline-block;
     margin-top: 7px;
@@ -390,6 +393,7 @@ body {
     border-radius: 15px;
     padding: 20px 17px 25px;
     margin-bottom: 10px;
+    margin-top: 48px;
 }
 
 .local-sidebar-news-list {
@@ -404,7 +408,7 @@ body {
 }
 
 .local-sidebar-news-item:not(:first-child) {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .local-sidebar-news-title {
