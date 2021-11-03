@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Rubik', Arial, sans-serif;
     margin: 0;
@@ -338,7 +342,7 @@ body {
 }
 
 .world-news-article-content {
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 .world-news-article-title {
@@ -352,7 +356,7 @@ body {
 }
 
 .world-news-article-link {
-    flex-grow: 1;
+
     color: #000000;
     text-decoration: none;
 }
@@ -391,7 +395,7 @@ body {
 }
 
 .local-sidebar-news {
-    flex-grow:1;
+    flex-grow: 1;
     background-color: #F6F6F6;
     border-radius: 15px;
     padding: 20px 17px 25px;
@@ -441,4 +445,119 @@ body {
     width: 393px;
     height: 335px;
     border-radius: 15px;
+}
+
+/* SITE-FOOTER */
+
+.site-footer {
+    background-color: #7297EF;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.footer-container {
+    /* width:1000px; */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.site-footer-logo {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.site-footer-logo-link {}
+
+.site-footer-logo-img {
+    display: flex;
+    width: 264px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.site-footer-info {
+    display: flex;
+}
+
+.site-footer-about {
+    width: 229px;
+    margin-right: 203px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.site-footer-links-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.site-footer-links {
+    width: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.site-footer-link {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 24px;
+}
+
+.site-footer-link:hover {
+    color: grey;
+}
+
+.site-footer-link:active {
+    color: rgba(77, 72, 72, 0.6);
+}
+
+.site-footer-divider {
+    border: none;
+    height: 1px;
+    background-color: #CECECE;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.site-footer-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.socials-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.socials-item:not(:last-child)  {
+    margin-right: 25px;
+}
+
+.socials-link {
+    flex-shrink: 0;
+}
+
+.socials-img {
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+  display: flex;
 }
