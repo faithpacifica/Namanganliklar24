@@ -153,6 +153,10 @@ body {
     padding-top: 26px;
     padding-bottom: 16px;
     border-bottom: 1px solid #D1D1D1;
+
+}
+
+.sitenav:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -447,6 +451,11 @@ body {
     border-radius: 15px;
 }
 
+.local-news-ad-long{
+    width: 393px;
+    height: 553px;
+}
+
 /* SITE-FOOTER */
 
 .site-footer {
@@ -547,7 +556,7 @@ body {
     text-align: center;
 }
 
-.socials-item:not(:last-child)  {
+.socials-item:not(:last-child) {
     margin-right: 25px;
 }
 
@@ -559,5 +568,127 @@ body {
     object-fit: contain;
     width: 25px;
     height: 25px;
-  display: flex;
+    display: flex;
+}
+
+
+/* -------------MEWS-LIST PAGE------------------ */
+
+
+
+
+/* ------------CONTACT PAGE------------------------- */
+
+.contact-form {
+    display: flex;
+    color: #000000;
+}
+
+.main-content__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* FORM */
+
+.form-table {
+    width: 696px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 18px 20px;
+}
+
+.form-box:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-box-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-box-wrapper .form-box {
+    width: calc(50% - 5px);
+    margin-bottom: 0;
+}
+
+.form-box-wrapper .form-box:first-child {
+    margin-right: 10px;
+}
+
+.form-box-input,
+.form-box-textarea {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.5;
+}
+
+.form-box-textarea {
+    resize: vertical;
+}
+
+.textarea-box{
+    min-height: 180px;
+}
+.form-table-button {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 17px 30px;
+    background-color: #7297EF;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.contacts {
+    width: 494px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 40px 25px;
+    height: 320px;/*TODO:310 bulishi kere edi*/
+}
+
+.contacts__info-list{
+
+}
+
+.contacts-info {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+
+.details {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.details:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts hr {
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid #D2D2D2;
 }

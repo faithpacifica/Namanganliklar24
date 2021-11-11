@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namanganliklar 24 || Contact page</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+
+        <!-- Site-header-MAIN -->
+        <div class="site-header-main">
+            <div class="container site-header-main-container">
+
+                <!-- Site-header-Logo -->
+                <a class="site-header-logo" href="index.html">
+                    <img class="site-header-logo-image" src="img/logo.svg" alt="logo" height='28' width='264'>
+                </a>
+
+                <!-- Currency -->
+                <div class="currencies">
+                    <span class="currencies-item currency">
+                        <strong class="currency-type">$ </strong>
+                        10137.2
+                    </span>
+                    <span class="currencies-item currency">
+                        <strong class="currency-type">P </strong>
+                        138.26
+                    </span>
+                </div>
+                <!-- Search field -->
+                <form class="site-search-form" action="#" method='GET'>
+                    <!-- <i></i> -->
+                    <input class="site-search-input" aria-label='Поиск' type="search" id="search" placeholder="Поиск"
+                        name="search">
+                </form>
+
+                <!-- Languages-button -->
+                <div class="language-button">
+                    <a class="language-button-link language-button-link-active" href="#">УЗ</a>
+                    <a class="language-button-link" href="#">РУ</a>
+                </div>
+
+                <!--Login-link-->
+                <a class='login-button' href="#">Войти</a>
+
+            </div>
+        </div>
+
+        <!-- Site-header-BOTTOM -->
+        <div class="site-header-bottom">
+            <div class="container site-header-bottom-container">
+
+                <!-- Sitenav -->
+                <nav class="sitenav">
+                    <ul class="sitenav-list">
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="index.html">Главное</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Интересное</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Экономика</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Политика</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Общество</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Технологии</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Спорт</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="#">Культура</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="index.html">Происшествия</a>
+                        </li>
+                        <li class="sitenav-item">
+                            <a class="sitenav-link" href="index.html"> Наука</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <h2 class="main-content__title">Напишите нам</h2>
+            <div class="contact-form">
+                <form class="form-table form" action="#" method="post">
+                    <div class="form-box-wrapper">
+                        <div class="form-box">
+                            <input class="form-box-input" type="text" name='name' placeholder="Имя" aria-label="Имя"
+                                required>
+                        </div>
+                        <div class="form-box">
+                            <input class="form-box-input" type="tel" name='tel' placeholder="Номер телефона"
+                                aria-label="Номер телефона" required>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <input class="form-box-input" type="email" name='email' placeholder="Электронная почта"
+                            aria-label="Электронная почта" required>
+                    </div>
+                    <div class="form-box textarea-box">
+                        <textarea class=" form-box-textarea textarea" name="text" placeholder="Текст" aria-label="Текст"
+                            required> 
+                        </textarea> <!-- TODO:  placeholder="Текст" chiqmadi -->
+                    </div>
+
+                    <button type='submit' class="form-table-button">Отправить</button>
+                </form>
+
+                <div class="contacts">
+                    <div class="contacts__info-list">
+
+                        <p class="contacts-info ">Электронная почта</p>
+                        <span class="details">info@namanganliklar24.uz</span>
+                        <hr>
+    
+                        <p class="contacts-info  ">Номер телефона</p>
+                        <span class="details">+998 88 522-54-76</span>
+                        <hr>
+    
+                        <p class="contacts-info ">Адрес</p>
+                        <span class="details">Ташкент, площадь Мустакиллик, 6 </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="site-footer-logo">
+                <a class="site-footer-logo-link" href="index.html">
+                    <img class="site-footer-logo-img" src="img/footer-logo.svg" alt="site-footer-logo" width="264"
+                        height="28">
+                </a>
+            </div>
+            <div class="site-footer-info">
+                <div class="site-footer-about">
+                    Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только
+                    с
+                    предварительного письменного разрешения редакции.
+                </div>
+                <div class="site-footer-links-wrapper">
+                    <ul class="site-footer-links">
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Информация о сайте</a>
+                        </li>
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Напишите нам</a>
+                        </li>
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Реклама</a>
+                        </li>
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Прислать новость</a>
+                        </li>
+                    </ul>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Использование материалов</a>
+                        </li>
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Темы дня</a>
+                        </li>
+                        <li class="site-footer-item">
+                            <a href="#" class="site-footer-link">Наша команда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="site-footer-divider">
+            <div class="site-footer-bottom">
+                <h3 class="social-media-title">Наши <br> социальные сети</h3>
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="https://https://www.facebook.com/" class="socials-link" target="_blank">
+                            <img class="socials-img" src="img/facebook-icon.svg" alt="facebook" width="25" height="25">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="#" class="socials-link" target="_blank">
+                            <img class="socials-img" src="img/instagram-icon.png" alt="instagram" width="25"
+                                height="25">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="#" class="socials-link" target="_blank">
+                            <img class="socials-img" src="img/telegram-icon.svg" alt="telegram" width="25" height="25">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="#" class="socials-link" target="_blank">
+                            <img class="socials-img" src="img/youtube-icon.svg" alt="youtube" width="25" height="25">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
