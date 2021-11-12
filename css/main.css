@@ -360,9 +360,17 @@ body {
 }
 
 .world-news-article-link {
-
     color: #000000;
     text-decoration: none;
+}
+
+
+.world-news-article-link:hover {
+    color: #7296ec;
+}
+
+.world-news-article-link:active {
+    opacity: 0.6;
 }
 
 .world-news-article-text {
@@ -383,6 +391,19 @@ body {
     padding: 17px 0;
     border: 0;
     outline: none;
+}
+
+
+.show-more-button:hover{
+    cursor: pointer;
+    background-color: #21242b;
+    color:white;
+}
+
+.show-more-button:active{
+    cursor: pointer;
+    background-color: #575b64;
+    color:white;
 }
 
 .local-news {
@@ -433,6 +454,14 @@ body {
 .local-sidebar-news-link {
     color: #000000;
     text-decoration: none;
+}
+
+.local-sidebar-news-link:hover {
+    color: #7296ec;
+}
+
+.local-sidebar-news-link:active {
+    opacity: 0.6;
 }
 
 .sidebar-newspaper {
@@ -602,11 +631,8 @@ body {
 }
 
 .form-box {
-    display: block;
-    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 18px 20px;
 }
 
 .form-box:not(:last-child) {
@@ -629,7 +655,9 @@ body {
 
 .form-box-input,
 .form-box-textarea {
-    outline: none;
+    padding: 18px 20px;
+    display: block;
+    width: 100%;
     border: none;
     font-size: 16px;
     line-height: 19px;
@@ -638,11 +666,13 @@ body {
 
 .form-box-textarea {
     resize: vertical;
+    
 }
 
 .textarea-box{
     min-height: 180px;
 }
+
 .form-table-button {
     margin-top: 10px;
     border: none;
@@ -657,16 +687,22 @@ body {
     align-self: flex-end;
 }
 
+.form-table-button:hover{
+    cursor: pointer;
+    background-color: #21242b;
+}
+
+.form-table-button:active{
+    cursor: pointer;
+    background-color: #575b64;
+}
+
 .contacts {
     width: 494px;
     background-color: #F6F6F6;
     border-radius: 10px;
     padding: 40px 25px;
     height: 320px;/*TODO:310 bulishi kere edi*/
-}
-
-.contacts__info-list{
-
 }
 
 .contacts-info {
@@ -678,9 +714,17 @@ body {
 }
 
 .details {
+    color: #000000;
     display: inline-block;
     font-size: 16px;
     line-height: 19px;
+}
+
+.details:hover{
+    color: #1e51c7;
+}
+.details:active{
+    color: #565a97;
 }
 
 .details:not(:last-child) {
