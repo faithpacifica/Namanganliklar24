@@ -666,10 +666,7 @@ body {
 
 .form-box-textarea {
     resize: vertical;
-    
-}
-
-.textarea-box{
+    border:transparent;
     min-height: 180px;
 }
 
