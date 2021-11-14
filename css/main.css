@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
-* {
-    box-sizing: border-box;
+:root{
+    --main-font-color:#000;
+}
+
+html {
+    box-sizing:border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* , *::before, *::after{
+    box-sizing: inherit;
 }
 
 a {
@@ -82,7 +92,6 @@ body {
 
 .site-search-form {
     margin-right: 25px;
-
 }
 
 .site-search-input {
@@ -129,7 +138,7 @@ body {
 }
 
 .language-button-link-active {
-    color: #000000;
+    color: var(--main-font-color);
     background-color: #FFFFFF;
 }
 
@@ -244,7 +253,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    color: #000000;
+    color: var(--main-font-color);
 }
 
 .article-card-text {
@@ -301,7 +310,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    color: #000000;
+    color: var(--main-font-color);
 }
 
 .orange-button {
@@ -324,7 +333,7 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: var(--main-font-color);
 }
 
 .global-and-local-news {
@@ -366,7 +375,7 @@ body {
 }
 
 .world-news-article-link {
-    color: #000000;
+    color: var(--main-font-color);
     text-decoration: none;
 }
 
@@ -390,7 +399,7 @@ body {
     font-weight: bold;
     line-height: 19px;
     font-size: 16px;
-    color: #000000;
+    color: var(--main-font-color);
     background-color: #EAEAEA;
     border-radius: 10px;
     width: 100%;
@@ -420,7 +429,7 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: var(--main-font-color);
     margin: 0;
     margin-bottom: 25px;
 }
@@ -458,7 +467,7 @@ body {
 }
 
 .local-sidebar-news-link {
-    color: #000000;
+    color: var(--main-font-color);
     text-decoration: none;
 }
 
@@ -510,7 +519,6 @@ body {
     margin-bottom: 15px;
 }
 
-.site-footer-logo-link {}
 
 .site-footer-logo-img {
     display: flex;
@@ -607,16 +615,13 @@ body {
 }
 
 
-/* -------------MEWS-LIST PAGE------------------ */
-
-
 
 
 /* ------------CONTACT PAGE------------------------- */
 
 .contact-form {
     display: flex;
-    color: #000000;
+    color: var(--main-font-color);
 }
 
 .main-content__title {
@@ -717,7 +722,7 @@ body {
 }
 
 .details {
-    color: #000000;
+    color: var(--main-font-color);
     display: inline-block;
     font-size: 16px;
     line-height: 19px;
