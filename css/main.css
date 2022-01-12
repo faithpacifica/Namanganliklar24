@@ -293,6 +293,7 @@ body {
 }
 
 /* Notice-banner */
+
 .notice-banner {
     margin-left: 75px;
     margin-right: 75px;
@@ -302,10 +303,18 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background: url(../img/notice-banner.png) no-repeat;
+    background: url('../img/notice-banner.png') no-repeat;
 }
 
 .notice-banner-text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--main-font-color);
+}
+
+.modal-notice-banner-text{
     margin: 0;
     font-weight: 500;
     font-size: 20px;
@@ -323,6 +332,56 @@ body {
     color: #FFFFFF;
     border: 0;
 }
+
+/* MODAL WINDOW */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0, 0.5);
+    text-align: center;
+    overflow: auto;
+}
+
+.modal-notice-banner-text{
+    margin-bottom: 25px;        
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 50px;
+
+}
+
+.modal-content {
+}
+
+.modal-open {
+    display: block;
+}
+
+.x-button{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    top: 20px;
+}
+
 
 /* WORLD NEWS */
 

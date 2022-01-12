@@ -208,7 +208,7 @@
         <p class="notice-banner-text">Хотите быть в курсе свежих новостей? <br>
           Включите уведомления!
         </p>
-        <button class="orange-button" type="button">Включит </button>
+        <button class="orange-button " id='modalButton' type="button">Включит </button>
       </section>
 
       <div class="world-news">
@@ -378,7 +378,7 @@
               <a href="#" class="site-footer-link">Информация о сайте</a>
             </li>
             <li class="site-footer-item">
-              <a href="contact.html"site-footer-link">Напишите нам</a>
+              <a href="contact.html" class="site-footer-link">Напишите нам</a>
             </li>
             <li class="site-footer-item">
               <a href="#" class="site-footer-link">Реклама</a>
@@ -429,6 +429,43 @@
       </div>
     </div>
   </footer>
+
+  <!-- MODAL WINDOW -->
+  <section class="modal ">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <p class=" modal-notice-banner-text">Хотите быть в курсе свежих новостей? <br>
+          Включите уведомления!
+        </p>
+        <button class="orange-button modal-opener" id="modal-closer" type="button">Включит </button>
+      </div>
+      <span class ="x-button" id="close-button">
+        <svg width="15" height="15" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.3002 0.710001C12.9102 0.320001 12.2802 0.320001 11.8902 0.710001L7.00022 5.59L2.11022 0.700001C1.72022 0.310001 1.09021 0.310001 0.700215 0.700001C0.310215 1.09 0.310215 1.72 0.700215 2.11L5.59022 7L0.700215 11.89C0.310215 12.28 0.310215 12.91 0.700215 13.3C1.09021 13.69 1.72022 13.69 2.11022 13.3L7.00022 8.41L11.8902 13.3C12.2802 13.69 12.9102 13.69 13.3002 13.3C13.6902 12.91 13.6902 12.28 13.3002 11.89L8.41021 7L13.3002 2.11C13.6802 1.73 13.6802 1.09 13.3002 0.710001V0.710001Z"
+            fill="black" />
+        </svg>
+      </span>
+    </div>
+  </section>
+
+  <script>
+    const elModalOpener = document.querySelector('#modalButton');
+    console.log(elModalOpener)
+
+    const elModal = document.getElementsByClassName('modal')[0];
+
+    const elModalCloser = document.querySelector('#close-button');
+    console.log(elModalCloser) //???
+
+    elModalOpener.addEventListener('click', () => {
+      elModal.classList.add('modal-open');
+    })
+
+    elModalCloser.addEventListener('click', () => {
+      elModal.classList.remove('modal-open'); //????
+    })
+  </script>
 </body>
 
 </html>
