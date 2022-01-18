@@ -451,19 +451,16 @@
 
   <script>
     const elModalOpener = document.querySelector('#modalButton');
-    console.log(elModalOpener)
-
-    const elModal = document.getElementsByClassName('modal')[0];
-
+    const elModal = document.querySelector('.modal');
     const elModalCloser = document.querySelector('#close-button');
-    console.log(elModalCloser) //???
+
 
     elModalOpener.addEventListener('click', () => {
       elModal.classList.add('modal-open');
     })
 
     elModalCloser.addEventListener('click', () => {
-      elModal.classList.remove('modal-open'); //????
+      elModal.classList.remove('modal-open'); 
     })
   </script>
 </body>
